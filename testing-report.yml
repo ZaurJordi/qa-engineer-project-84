@@ -1,0 +1,23 @@
+- summary: |
+    Проверка смены языка в приложении
+  status: pass
+
+- summary: |
+    Проверка выбора категории товара
+  status: pass
+
+- summary: |
+    Проверка добавления товара в корзину
+  status: pass
+  
+- summary: |
+    Проверка фильтра по производителю товара
+  status: pass
+
+- summary: |
+    Проверка очистки корзины
+  status: pass
+
+- summary: |
+    Проверка поиска по наименованию
+  status: pass
