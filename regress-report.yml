@@ -1,36 +1,36 @@
 ---
 test-cases:
   - summary: |
-    Проверка смены языка в приложении
-  status: fail
+      Проверка смены языка в приложении
+    status: fail
 
-- summary: |
-    Проверка выбора категории товара
-  status: pass
+  - summary: |
+      Проверка выбора категории товара
+    status: pass
 
-- summary: |
-    Проверка добавления товара в корзину
-  status: pass
+  - summary: |
+      Проверка добавления товара в корзину
+    status: pass
   
-- summary: |
-    Проверка фильтра по производителю товара
-  status: pass
+  - summary: |
+      Проверка фильтра по производителю товара
+    status: pass
 
-- summary: |
-    Проверка очистки корзины
-  status: pass
+  - summary: |
+      Проверка очистки корзины
+    status: pass
 
-- summary: |
-    Проверка поиска по наименованию
-  status: pass
+  - summary: |
+      Проверка поиска по наименованию
+    status: pass
 
-- summary: |
-    Проверка подтверждения очистки корзины
-  status: fail
+  - summary: |
+      Проверка подтверждения очистки корзины
+    status: fail
 
-- summary: |
-    Проверка переключения страниц кнопками навигации
-  status: fail
+   - summary: |
+      Проверка переключения страниц кнопками навигации
+     status: fail
 
 bugreports:
   - summary: |
