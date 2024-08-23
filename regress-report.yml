@@ -34,101 +34,101 @@ test-cases:
 
 bugreports:
   - summary: |
-    Кнопки навигации
-  environment: |
-    Safari   17.6
-    macOS Sonoma 14.6.1
-  steps-to-reproduce: |
-    1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
-    2. На стартовой странице только кнопка "Следующая"
-    3. Нажать кнопку "Следующая"
-  expected-result: |
-    На каждой странице должны быть кнопки навигации "Предыдущая" и "Следующая"
-  actual-result: |
-    На странице только 1 кнопка навигации, либо "Предыдущая", либо "Следующая"
+      Кнопки навигации
+    environment: |
+      Safari   17.6
+      macOS Sonoma 14.6.1
+    steps-to-reproduce: |
+      1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
+      2. На стартовой странице только кнопка "Следующая"
+      3. Нажать кнопку "Следующая"
+    expected-result: |
+      На каждой странице должны быть кнопки навигации "Предыдущая" и "Следующая"
+    actual-result: |
+      На странице только 1 кнопка навигации, либо "Предыдущая", либо "Следующая"
 
   - summary: |
-    Количество страниц с товарами
-  environment: |
-    Safari   17.6
-    macOS Sonoma 14.6.1
-  steps-to-reproduce: |
-    1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
-    2. Нажать "Следующая"
-  expected-result: |
-    Можно пролистать несколько страниц с товарами
-  actual-result: |
-    В приложении осталось только 2 страницы с товарами
+      Количество страниц с товарами
+    environment: |
+      Safari   17.6
+      macOS Sonoma 14.6.1
+    steps-to-reproduce: |
+      1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
+      2. Нажать "Следующая"
+    expected-result: |
+      Можно пролистать несколько страниц с товарами
+    actual-result: |
+      В приложении осталось только 2 страницы с товарами
 
   - summary: |
-    Кнопка навигации
-  environment: |
-    Safari   17.6
-    macOS Sonoma 14.6.1
-  steps-to-reproduce: |
-    1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
-    2. Снять галочку на фильтре "В наличии"
-  expected-result: |
-    Кнопки навигации должны всегда присутствовать на странице
-  actual-result: |
-    При отключенном фильтре "В наличии" кнопка навигации исчезает
+      Кнопка навигации
+    environment: |
+      Safari   17.6
+      macOS Sonoma 14.6.1
+    steps-to-reproduce: |
+      1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
+      2. Снять галочку на фильтре "В наличии"
+    expected-result: |
+      Кнопки навигации должны всегда присутствовать на странице
+    actual-result: |
+      При отключенном фильтре "В наличии" кнопка навигации исчезает
 
   - summary: |
-    Кнопка "Поиск"
-  environment: |
-    Safari   17.6
-    macOS Sonoma 14.6.1
-  steps-to-reproduce: |
-    1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
-    2. В поле "Поиск" ввести название товара, которого нет в магазине, например "chocolate"
-  expected-result: |
-    Должно появиться сообщение "Ничего не найдено!"
-  actual-result: |
-    Отображаются все товары, представленные в магазине
+      Кнопка "Поиск"
+    environment: |
+      Safari   17.6
+      macOS Sonoma 14.6.1
+    steps-to-reproduce: |
+      1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
+      2. В поле "Поиск" ввести название товара, которого нет в магазине, например "chocolate"
+    expected-result: |
+      Должно появиться сообщение "Ничего не найдено!"
+    actual-result: |
+      Отображаются все товары, представленные в магазине
 
   - summary: |
-    Очистка корзины
-  environment: |
-    Safari   17.6
-    macOS Sonoma 14.6.1
-  steps-to-reproduce: |
-    1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
-    2. Добавить любой товар в корзину
-    3. Перейти в корзину
-    4. Нажать "Очистить корзину"
-    5. Товар удаляется
-    6. Перейти в магазин
-    7. Зайти обратно в корзину
-  expected-result: |
-    Корзина должна быть пустой
-  actual-result: |
-    В корзине присутствуют товары, добавленные на ш.2
+      Очистка корзины
+    environment: |
+      Safari   17.6
+      macOS Sonoma 14.6.1
+    steps-to-reproduce: |
+      1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
+      2. Добавить любой товар в корзину
+      3. Перейти в корзину
+      4. Нажать "Очистить корзину"
+      5. Товар удаляется
+      6. Перейти в магазин
+      7. Зайти обратно в корзину
+    expected-result: |
+      Корзина должна быть пустой
+    actual-result: |
+      В корзине присутствуют товары, добавленные на ш.2
 
   - summary: |
-    Переключение языка при переходе из корзины в магазин
-  environment: |
-    Safari   17.6
-    macOS Sonoma 14.6.1
-  steps-to-reproduce: |
-    1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
-    2. Установить русский язык
-    3. Перейти в корзину
-    6. Перейти в магазин
-  expected-result: |
-    Русский язык должен сохраняться языком приложения
-  actual-result: |
-    Происходит смена языка с русского на английский
+      Переключение языка при переходе из корзины в магазин
+    environment: |
+      Safari   17.6
+      macOS Sonoma 14.6.1
+    steps-to-reproduce: |
+      1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
+      2. Установить русский язык
+      3. Перейти в корзину
+      6. Перейти в магазин
+    expected-result: |
+      Русский язык должен сохраняться языком приложения
+    actual-result: |
+      Происходит смена языка с русского на английский
 
   - summary: |
-   Фильтры "Категория" и "Производитель" одновременно работают некорректно
-  environment: |
-    Safari   17.6
-    macOS Sonoma 14.6.1
-  steps-to-reproduce: |
-    1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
-    2. Выбрать любую категорию товара, например "groceries"
-    3. Выбрать любого производителя не из этой категории товаров, например "Calvin Klein"
-  expected-result: |
-    Должно появиться сообщение "Ничего не найдено!"
-  actual-result: |
-    На странице отображаются все товары магазина
+     Фильтры "Категория" и "Производитель" одновременно работают некорректно
+    environment: |
+      Safari   17.6
+      macOS Sonoma 14.6.1
+    steps-to-reproduce: |
+      1. Зайти на страницу магазина https://hexlet-products-store.vercel.app
+      2. Выбрать любую категорию товара, например "groceries"
+      3. Выбрать любого производителя не из этой категории товаров, например "Calvin Klein"
+    expected-result: |
+      Должно появиться сообщение "Ничего не найдено!"
+    actual-result: |
+      На странице отображаются все товары магазина
