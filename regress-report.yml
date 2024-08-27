@@ -5,6 +5,10 @@ test-cases:
     status: fail
 
   - summary: |
+    Проверка смены языка в приложении с русского на английский
+  status: pass
+
+  - summary: |
       Проверка выбора категории товара
     status: pass
 
